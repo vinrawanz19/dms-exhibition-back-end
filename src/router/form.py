@@ -17,6 +17,6 @@ def get_db():
 async def router_create_form(form:FormCreate , db: Session = Depends(get_db)):
     db_form_search = get_form(db, form.email, form.company)
     if(db_form_search is not None):
-        raise HTTPException(status_code=404, detail="Already registered")
+        raise HTTPException(status_code=404, detail="Email telah digunakan, mohon untuk menggunakan email lain")
 
     return create_form(form=form, db=db)

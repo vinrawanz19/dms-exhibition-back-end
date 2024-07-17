@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 origins = [
-    "http://localhost:52564",   # Replace with your frontend URL
+    "http://localhost:59704",   # Replace with your frontend URL
     "http://localhost:8000",    # Replace with your backend URL
     "http://localhost"          # Add any other necessary origins
 ]

@@ -10,4 +10,4 @@ class Form(Base):
     email= Column(String)
     phone_number= Column(String)
     company= Column(String)
-    remark= Column(String)
+    domisili= Column(String)

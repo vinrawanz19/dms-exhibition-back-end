@@ -5,7 +5,7 @@ class FormBase(BaseModel):
     name: str
     email: str
     phone_number: str
-    remark : str | None
+    domisili : str
     company: str
 
 class FormCreate(FormBase):

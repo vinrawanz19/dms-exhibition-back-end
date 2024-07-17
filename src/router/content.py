@@ -17,5 +17,5 @@ def get_db():
 def read_users(company:str , db: Session = Depends(get_db)):
     db_content = get_content(company=company, db=db)
     if db_content is None:
-        raise HTTPException(status_code=404, detail="Content not found")
+        raise HTTPException(status_code=404, detail="Gagal mendapatkan content")
     return db_content
